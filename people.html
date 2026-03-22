@@ -4,9 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>people — Brian Mick</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body class="subpage">
+  <body class="subpage people-page">
     <header class="site-header">
       <nav class="nav" aria-label="Primary">
         <a class="nav-brand" href="index.html">Brian</a>
@@ -19,6 +25,225 @@
     </header>
     <main>
       <h1 class="page-title">people</h1>
+      <p class="people-intro">
+        Player characters in the style of Magic: The Gathering planeswalker
+        cards.
+      </p>
+
+      <div class="character-grid">
+        <article class="pw-card pw-card--monk">
+          <header class="pw-card__titlebar">
+            <h2 class="pw-card__name">Silvos the Silent</h2>
+            <div class="pw-card__level" aria-label="Level 11">
+              <span class="pw-card__level-num">11</span>
+            </div>
+          </header>
+          <div class="pw-card__art">
+            <img
+              src="images/silvos.jpg"
+              alt="Portrait of Silvos the Silent"
+              width="240"
+              height="320"
+              loading="lazy"
+            />
+          </div>
+          <p class="pw-card__typeline">
+            Human Monk — Way of the Open Hand
+          </p>
+          <div class="pw-card__textbox">
+            <div class="pw-card__ability">
+              <span class="pw-card__dice" aria-hidden="true">
+                <svg
+                  class="pw-card__dice-svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 9h2v2H7V9zm8 0h2v2h-2V9zm-4 4h2v2h-2v-2zm-4 4h2v2H7v-2zm8 0h2v2h-2v-2z"
+                  />
+                </svg>
+              </span>
+              <div class="pw-card__rules">
+                <p>
+                  (d8+3) Quarterstaff: <em>topple</em> — may knock opponent
+                  prone
+                </p>
+              </div>
+            </div>
+            <ul class="pw-card__stats" aria-label="Ability scores">
+              <li class="pw-stat">
+                <span class="pw-stat__hex">12</span>
+                <span class="pw-stat__abbr">STR</span>
+              </li>
+              <li class="pw-stat">
+                <span class="pw-stat__hex">17</span>
+                <span class="pw-stat__abbr">DEX</span>
+              </li>
+              <li class="pw-stat">
+                <span class="pw-stat__hex">14</span>
+                <span class="pw-stat__abbr">CON</span>
+              </li>
+              <li class="pw-stat">
+                <span class="pw-stat__hex">13</span>
+                <span class="pw-stat__abbr">INT</span>
+              </li>
+              <li class="pw-stat">
+                <span class="pw-stat__hex">16</span>
+                <span class="pw-stat__abbr">WIS</span>
+              </li>
+              <li class="pw-stat">
+                <span class="pw-stat__hex">9</span>
+                <span class="pw-stat__abbr">CHA</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="pw-card pw-card--barbarian">
+          <header class="pw-card__titlebar">
+            <h2 class="pw-card__name">Kamahl Thornemark</h2>
+            <div class="pw-card__level" aria-label="Level 4">
+              <span class="pw-card__level-num">4</span>
+            </div>
+          </header>
+          <div class="pw-card__art">
+            <img
+              src="images/kamahl.jpg"
+              alt="Portrait of Kamahl Thornemark"
+              width="240"
+              height="320"
+              loading="lazy"
+            />
+          </div>
+          <p class="pw-card__typeline">
+            Human Barbarian — Path of the Wild Heart
+          </p>
+          <div class="pw-card__textbox">
+            <div class="pw-card__ability">
+              <span class="pw-card__dice" aria-hidden="true">
+                <svg
+                  class="pw-card__dice-svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 9h2v2H7V9zm8 0h2v2h-2V9zm-4 4h2v2h-2v-2zm-4 4h2v2H7v-2zm8 0h2v2h-2v-2z"
+                  />
+                </svg>
+              </span>
+              <div class="pw-card__rules">
+                <p>
+                  (d12+4) Great Axe: <em>cleave</em> — may strike again if enemy
+                  falls
+                </p>
+              </div>
+            </div>
+            <ul class="pw-card__stats" aria-label="Ability scores">
+              <li class="pw-stat">
+                <span class="pw-stat__hex">18</span>
+                <span class="pw-stat__abbr">STR</span>
+              </li>
+              <li class="pw-stat">
+                <span class="pw-stat__hex">12</span>
+                <span class="pw-stat__abbr">DEX</span>
+              </li>
+              <li class="pw-stat">
+                <span class="pw-stat__hex">14</span>
+                <span class="pw-stat__abbr">CON</span>
+              </li>
+              <li class="pw-stat">
+                <span class="pw-stat__hex">10</span>
+                <span class="pw-stat__abbr">INT</span>
+              </li>
+              <li class="pw-stat">
+                <span class="pw-stat__hex">14</span>
+                <span class="pw-stat__abbr">WIS</span>
+              </li>
+              <li class="pw-stat">
+                <span class="pw-stat__hex">8</span>
+                <span class="pw-stat__abbr">CHA</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="pw-card pw-card--bard">
+          <header class="pw-card__titlebar">
+            <h2 class="pw-card__name">Irixis Emberstep</h2>
+            <div class="pw-card__level" aria-label="Level 5">
+              <span class="pw-card__level-num">5</span>
+            </div>
+          </header>
+          <div class="pw-card__art">
+            <img
+              src="images/irixis.jpg"
+              alt="Portrait of Irixis Emberstep"
+              width="240"
+              height="320"
+              loading="lazy"
+            />
+          </div>
+          <p class="pw-card__typeline">
+            Tiefling Bard — College of Dance
+          </p>
+          <div class="pw-card__textbox">
+            <div class="pw-card__ability">
+              <span class="pw-card__dice" aria-hidden="true">
+                <svg
+                  class="pw-card__dice-svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 9h2v2H7V9zm8 0h2v2h-2V9zm-4 4h2v2h-2v-2zm-4 4h2v2H7v-2zm8 0h2v2h-2v-2z"
+                  />
+                </svg>
+              </span>
+              <div class="pw-card__rules">
+                <p>
+                  (d6+4) Roundhouse Kick: Uses charisma instead of dexterity for
+                  damage
+                </p>
+              </div>
+            </div>
+            <ul class="pw-card__stats" aria-label="Ability scores">
+              <li class="pw-stat">
+                <span class="pw-stat__hex">8</span>
+                <span class="pw-stat__abbr">STR</span>
+              </li>
+              <li class="pw-stat">
+                <span class="pw-stat__hex">16</span>
+                <span class="pw-stat__abbr">DEX</span>
+              </li>
+              <li class="pw-stat">
+                <span class="pw-stat__hex">14</span>
+                <span class="pw-stat__abbr">CON</span>
+              </li>
+              <li class="pw-stat">
+                <span class="pw-stat__hex">12</span>
+                <span class="pw-stat__abbr">INT</span>
+              </li>
+              <li class="pw-stat">
+                <span class="pw-stat__hex">10</span>
+                <span class="pw-stat__abbr">WIS</span>
+              </li>
+              <li class="pw-stat">
+                <span class="pw-stat__hex">18</span>
+                <span class="pw-stat__abbr">CHA</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </div>
     </main>
   </body>
 </html>
