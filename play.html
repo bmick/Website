@@ -22,9 +22,60 @@
       <div class="page-prose">
         <p>Here is the first game Brian managed to program.</p>
       </div>
-      <div class="game-slot" aria-label="Game embed area">
-        <!-- Add your game (canvas, iframe, etc.) here. -->
-      </div>
+      <section class="snake-shell" aria-label="Snake game">
+        <header class="snake-topbar">
+          <div class="snake-control-hint" aria-hidden="true">
+            <div class="key-row key-row--single">
+              <span class="key-cap">W</span>
+            </div>
+            <div class="key-row">
+              <span class="key-cap">A</span>
+              <span class="key-cap">S</span>
+              <span class="key-cap">D</span>
+            </div>
+          </div>
+          <h2 class="snake-title">Snake</h2>
+          <div class="snake-control-hint" aria-hidden="true">
+            <div class="key-row key-row--single">
+              <span class="key-cap">↑</span>
+            </div>
+            <div class="key-row">
+              <span class="key-cap">←</span>
+              <span class="key-cap">↓</span>
+              <span class="key-cap">→</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="snake-play-area">
+          <div class="snake-board-wrap">
+            <div id="snake-board" class="snake-board" role="grid" aria-label="10 by 10 snake board"></div>
+            <div id="snake-overlay" class="snake-overlay" aria-live="polite"></div>
+          </div>
+          <aside class="snake-speed-panel" aria-label="Speed control">
+            <label class="snake-speed-label" for="snake-speed">Speed</label>
+            <input
+              id="snake-speed"
+              class="snake-speed-slider"
+              type="range"
+              min="1"
+              max="11"
+              step="1"
+              value="3"
+              aria-valuemin="1"
+              aria-valuemax="11"
+            />
+            <p id="snake-speed-value" class="snake-speed-value">3</p>
+          </aside>
+        </div>
+
+        <div class="snake-controls">
+          <button id="snake-pause" class="snake-button" type="button">Pause</button>
+          <button id="snake-restart" class="snake-button" type="button">Restart</button>
+        </div>
+        <p class="snake-version">v0.2</p>
+      </section>
     </main>
+    <script src="games/snake-v0.1.js"></script>
   </body>
 </html>
