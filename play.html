@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>play — Brian Mick</title>
+    <title>Monsters — Brian Mick</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="subpage">
@@ -22,24 +22,34 @@
       <div class="page-prose">
         <p>Here is the first game Brian managed to program.</p>
       </div>
-      <section class="world-shell" aria-label="Route world prototype">
-        <header class="world-topbar">
-          <h2 class="world-title">Route World Prototype</h2>
-          <p class="world-help">Move with WASD or Arrow Keys</p>
+      <section class="monsters-shell" aria-label="Monsters game">
+        <header class="monsters-topbar">
+          <h2 class="monsters-title">Monsters</h2>
+          <div class="monsters-hints" aria-hidden="true">
+            <p id="hint-move" class="monsters-help">Move with WASD</p>
+            <p id="hint-menu" class="monsters-help">E for menu</p>
+          </div>
         </header>
-        <div class="world-stage">
+        <div class="monsters-stage">
           <canvas
-            id="world-canvas"
-            class="world-canvas"
+            id="monsters-canvas"
+            class="monsters-canvas"
             width="960"
             height="576"
-            aria-label="Top down world map"
+            aria-label="Monsters game map"
           ></canvas>
           <div id="zone-banner" class="zone-banner" aria-live="polite"></div>
+          <div id="inspect-popup" class="inspect-popup" aria-live="polite"></div>
+          <aside id="menu-panel" class="menu-panel" aria-label="Game menu">
+            <h3 class="menu-title">Menu</h3>
+            <button class="menu-item" type="button">monsters</button>
+            <button class="menu-item" type="button">items</button>
+            <button class="menu-item" type="button">player</button>
+          </aside>
         </div>
-        <p class="world-version">v0.1</p>
+        <p class="monsters-version">v0.2</p>
       </section>
     </main>
-    <script src="games/world-v0.1.js"></script>
+    <script src="games/monsters-v0.2.js"></script>
   </body>
 </html>
