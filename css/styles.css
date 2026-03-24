@@ -363,6 +363,80 @@ main {
   font-size: 0.72rem;
 }
 
+/* Play — top-down world prototype */
+.world-shell {
+  margin-top: 1.75rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+}
+
+.world-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.world-title {
+  margin: 0;
+  font-size: 1.15rem;
+  letter-spacing: 0.01em;
+}
+
+.world-help {
+  margin: 0;
+  color: #5c6a79;
+  font-size: 0.86rem;
+}
+
+.world-stage {
+  position: relative;
+}
+
+.world-canvas {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #cdd8e2;
+  background: #89c77a;
+}
+
+.zone-banner {
+  position: absolute;
+  top: 0.65rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+  background: rgba(19, 28, 39, 0.9);
+  color: #fff;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.83rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  white-space: nowrap;
+}
+
+.zone-banner.is-visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.world-version {
+  margin: 0.65rem 0 0;
+  text-align: center;
+  color: #778290;
+  font-size: 0.72rem;
+}
+
 @media (max-width: 40rem) {
   .snake-play-area {
     grid-template-columns: 1fr;
@@ -381,6 +455,12 @@ main {
     -webkit-appearance: auto;
     width: min(70vw, 16rem);
     height: auto;
+  }
+
+  .world-topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
   }
 }
 
